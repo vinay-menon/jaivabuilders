@@ -27,6 +27,7 @@
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/flickity.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
   
@@ -85,17 +86,11 @@
       <nav class="navbar-desctop visible-md visible-lg">
         <div class="container">
           <a href="#top" class="brand js-target-scroll">
-            go<span class="text-primary">.</span>arch
+            <img src="img/logo.png" alt="" class="nav-collapsed-logo">  Jaiva Builders
           </a>
           <ul class="navbar-desctop-menu">
             <li class="active">
               <a href="index.html">Home</a>
-              <ul>
-                <li><a href="../light/index.html">Home - Light</a></li>
-                <li class="active">
-                  <a href="index.html">Home - Dark</a>
-                </li>
-              </ul>
             </li>
             <li>
               <a href="about.html">About us</a>
@@ -176,10 +171,16 @@
 
       <!-- Start revolution slider -->
 
-      <div class="main-intro-slider">
-        <div class="main-intro-slider_item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-345 226.6 1229 628.4"><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M-236.5 578.8L-253 847.6l-22 1 19-300.1 449-34.3 25.5-1.9v342.3l-28.5-.7"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M-16.5 594.6l-7.5 245-18-.5 8.5-222.5-186-35-15.5 265.5-18 .5M192.9 548.9l-429.4 29.9"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M-236.6 547.3l218.8 47.4 394.3-19.4v23l-27.9.8-353.1 18.5-6 220-13.5 2"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M218.8 854.6l10.7-1.5V549M218.5 512.3l158 63M372.5 843.1l-22.5-.8-2.7-247M229.5 548.6l117.8 46.7M372.5 843.1l7.5-2-3.5-242.8M190 853.9l2.9-305M-59 357.2l-285.5 200.4v6.4"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M-344.5 563.7L-62 364.6l337.5 152L442 594.1l2.5-4.5-255-121"/><path fill="none" stroke="#fbff50" stroke-width=".694" stroke-miterlimit="10" d="M9 247.8l118.3 82-.5 5"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M-43.3 298.5l50.6-42.7 113.2 75.7h-7.7l-222.3 28.8V357"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M-21.3 227.3l-149.2 143.8v8l153 60.8"/><path fill="none" stroke="#fbff50" stroke-width=".694" stroke-miterlimit="10" d="M-170.5 376.6l151-143.8 155 102 165.4 90.8 1.8-3.1L143 323.3"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M-144 832.6l23-468 243-30-8.7 498"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M-158.7 647.5l25-23.4-1.2 23.4zM-133.7 655.3l-25-8.2M-99.3 827.9l8.7-184.4 121.9-8.1L25 832.6"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M-90.6 643.5l18.6 3.6-4.5 115.5M31.2 639.9L-72 647.1"/><path fill="none" stroke="#fbff50" stroke-width=".694" stroke-miterlimit="10" d="M766.7 843.1l-16-279.4-364 19.9"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M372.3 567l394.2-23 19.4 299.7 18.8-3.2H880l3.5-7.9V817M805.3 605.9l-38.8-62"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M800 796.6l-14.1-208.7 19.4 23.4M810 600.6l46 39.3 19.3 43.5-32.6 2.2M810 640.5h46M197.9 400l265.9-30.7 34.7 30.6v29.7l-34.5-27-266.1 26.8"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M229.8 382.6l255.5-25.5 2 39.5M848.7 808.4L833 588.2 810 543l-14.4-202-4.6-14.5h-5.1l4.8 23.1-4.7-15.9-248 26.7-2.6-38.2-47.9 7V358"/></svg>
-          <img src="img/slider/01.png" alt="">
+      <!-- flickity -->
+      <div class="carousel main-intro-slider" data-flickity='{ "autoPlay": 5000,"pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": false, "contain": true, "wrapAround": true}'>
+        <div class=" carousel-cell main-intro-slider_item">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 960"><image width="1280" height="960" xlink:href="img/slider/01.png" overflow="visible"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M136.5 558.3L120 827l-22 1 19-300.1 449-34.3 25.5-1.9V834l-28.5-.7"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M356.5 574L349 819l-18-.5 8.5-222.5-186-35L138 826.5l-18 .5M565.9 528.3l-429.4 30"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M136.4 526.7l218.8 47.4 394.3-19.4v23l-27.9.8L368.5 597l-6 220-13.5 2"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M591.8 833.8l10.7-1.3V528M591.5 491.7l158 63M745.5 822.5l-22.5-.8-2.7-247M602.5 528l117.8 46.7M745.5 822.5l7.5-2-3.5-242.8M563 833.3l2.9-305M314 336.4L28.5 537v6"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M28.5 543.1L311 344l337.5 152L815 573.5l2.5-4.5-255-121"/><path fill="none" stroke="#fbff50" stroke-width=".694" stroke-miterlimit="10" d="M382 227.3l118.3 81.9-.5 5"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M329.8 277.8l50.5-42.9 113.2 75.6h-7.7l-222.3 29.3V336"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M351.8 206.8L202.5 350.5v8l153 60.8"/><path fill="none" stroke="#fbff50" stroke-width=".694" stroke-miterlimit="10" d="M202.5 356l151-143.7 155 101.9L673.9 405l1.8-3.1L516 302.7"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M229 812l23-468 243-30-8.7 498"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M214.3 626.5l25-23.4-1.2 23.4zM239.3 634.7l-25-8.2M273.7 807.3l8.7-184.4 121.9-8.1L398 812"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M282.4 622.9l18.6 3.6-4.5 115.5M404.2 619.3L301 626.5"/><path fill="none" stroke="#fbff50" stroke-width=".694" stroke-miterlimit="10" d="M1139.7 822.5l-16-279.4-364 19.9"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M745.3 546.3l394.2-23 19.4 299.5 18.8-3.3h75.3l3.5-7.5v-16M1178.3 585.3l-38.8-62"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M1173 776l-14.1-208.7 19.4 23.4M1183 580l46 39.3 19.3 43.5-32.6 2.2M1183 619.5h46M570.9 379.4l265.9-30.7 34.7 30.6V409L837 382l-266.1 26.8"/><path fill="none" stroke="#fbff50" stroke-miterlimit="10" d="M602.8 362l255.5-25.5 2 39.5M1221.7 787.6L1206 567.5l-23-45.1-14.4-202.3-4.6-14.6h-5.1l4.8 23.3-4.7-15.8-248 26.7-2.6-38.1-47.9 7V337"/></svg>
+        </div>
+        <div class=" carousel-cell main-intro-slider_item">
+          <svg id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-23.4 -202.3 1517.7 882.2"><style type="text/css">.st0{fill:none;stroke:#FBFF50;stroke-miterlimit:10;}</style><image width="1280" height="744" id="XMLID_52_" xlink:href="img/slider/02.png" transform="translate(-23.353 -202.317) scale(1.1857)" overflow="visible"/><path id="XMLID_34_" class="st0" d="M1040.6 204.8L1035 98.5h14.5v-9.9l-97.8-61-41.8 7.1-111.5-62-421.9 85.1v10.8l64 20.1v6.9l-29.5 3-7 166-10.6 2.6-9.4 2.4 11.3 3.7-.3 6.4"/><path id="XMLID_90_" class="st0" d="M217.3 547l6.4-134.5H234l9-118 444.7-44.1 184 43.9 3.2 118 8.6 1.3v137.9H834l-4.3-136.9"/><path id="XMLID_93_" class="st0" d="M270.5 551.1L283 414.5h-6l2.7-61.9"/><path id="XMLID_60_" class="st0" d="M242.3 551l15.4-198.7 402.8-30.7v72l-12.8 1.3 3.3 6.1-.7 158.5H686l1.7-309"/><path id="XMLID_29_" class="st0" d="M860.5 348.3l-156-29.4v74.7l10.5 1.3-2 161.4-24.7 3.3"/><path id="XMLID_25_" class="st0" d="M279.5 352.2l148.8 16.1-2.6 84.2H402l-3 86.6 135.3 4.6"/><path id="XMLID_23_" class="st0" d="M571.7 367.6l-.7 92.7-103.3 1.3 2.6-92 80.7-6"/><path id="XMLID_21_" class="st0" d="M564.3 368.9l-82.6 4.7-1.4 88.7"/><path id="XMLID_20_" class="st0" d="M604.3 366.3l-1.3 94 160.7-.7-1.4-102.7"/><path id="XMLID_18_" class="st0" d="M613.7 364.9l-.7 93.4"/><path id="XMLID_17_" class="st0" d="M873.7 316.3l128.6-8 19.4 4 6.6 148"/><path id="XMLID_16_" class="st0" d="M996.3 318.9l4.7 133.4-120 4"/><path id="XMLID_15_" class="st0" d="M880.3 465.6l132-3.3-8.6-146"/><path id="XMLID_14_" class="st0" d="M421.5 109.1l131.5-21-2 167-136 11.5"/><path id="XMLID_13_" class="st0" d="M438.5 116.1l70.5 21 43.5-5"/><path id="XMLID_12_" class="st0" d="M504.5 254.6l4.5-117.5"/><path id="XMLID_11_" class="st0" d="M458 90.6l109-16-6 158.5"/><path id="XMLID_10_" class="st0" d="M592.5 82.1L567 74.6"/><path id="XMLID_9_" class="st0" d="M827.5 57.1l117-19.5 5 176"/><path id="XMLID_8_" class="st0" d="M739 191.1l10-1.5.5 44.5 382.5-37.5 113 55.5"/><path id="XMLID_7_" class="st0" d="M1178.3 217.6l68.7-7.3 4 57.3-52.7 3.3 2.7 44.7"/><path id="XMLID_6_" class="st0" d="M1216.1 269.4l31.4 14.1 3.9 66.7 29.1 9.4v7l-27.5 1 10 141.3 10 .7 1.3 30"/><path id="XMLID_5_" class="st0" d="M1130.3 314.3l49.4-3.4 42.6 16 10 138.7"/><path id="XMLID_2_" class="st0" d="M1185 320.9l34.7 11.4 8 119.3"/></svg>
+        </div>
+        <div class=" carousel-cell main-intro-slider_item">
+          <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="719" viewBox="219.6 -44.3 1280 719"><style>.st0{fill:none;stroke:#fbff50;stroke-miterlimit:10}</style><image width="1280" height="719" id="XMLID_139_" xlink:href="img/slider/03.png" transform="translate(219.647 -44.317)" overflow="visible"/><path id="XMLID_138_" class="st0" d="M681.1 98.7l2.2-16-48.8-19v-11l245.3-50 133.9 88 150.9-26 72.9 68v9l-7.7 5 2.9 131 72-4 15 296"/><path id="XMLID_142_" class="st0" d="M840.6 389.7l334-17 9 212 23 2-11-246"/><path id="XMLID_143_" class="st0" d="M1216.6 583.9l-8-199.7 17 6.3h21l-37-13.7"/><path id="XMLID_144_" class="st0" d="M1208.5 343.8l38 15.9V377"/><path id="XMLID_145_" class="st0" d="M841.6 376.7l-3-14 345-23"/><path id="XMLID_146_" class="st0" d="M666.6 92.7l-247 44-2.2 32.7-8.5 1 .5 6.8 19.7 6.2-9.5 180.3-31.3 2-6 198 10.7 4-.7 16.6"/><path id="XMLID_147_" class="st0" d="M390.3 555.7l10-179.4 224-14.6-2.7 196z"/><path id="XMLID_148_" class="st0" d="M423.6 568.3l206.7 6 6-217.3"/><path id="XMLID_150_" class="st0" d="M429 362.3l208.6-16.6L663 351l-4 222"/><path id="XMLID_149_" class="st0" d="M447 317l5.3-98L575 203"/><path id="XMLID_151_" class="st0" d="M589 187l-2.7 134-144.7 15.3"/><path id="XMLID_153_" class="st0" d="M464.3 341l147.3-12 4.7-135.3-28.7-10.7-146 24-4 113.3"/><path id="XMLID_152_" class="st0" d="M668.1 126.2l1-35 21 11-2.5 254.5 177-13.5 1-326-218.5 43"/><path id="XMLID_154_" class="st0" d="M688.1 99.2l-1-31.5 177.5-33.5"/><path id="XMLID_156_" class="st0" d="M858.3 117.7l.7 14.6 308-48 66.6 54"/><path id="XMLID_155_" class="st0" d="M1189.6 293l38 18-7.3-164.7-38.7-33.3 8 224"/><path id="XMLID_158_" class="st0" d="M869 152.3l284.6-40.6 5.4 174L868.3 315"/><path id="XMLID_159_" class="st0" d="M879.6 159.7L1153 119"/><path id="XMLID_160_" class="st0" d="M913.6 157l20.7 10 .7 17.3 9.3 4.7 258-34 4.7 140.7"/><path id="XMLID_161_" class="st0" d="M1056.3 177c.7 4 2 116 2 116"/><path id="XMLID_162_" class="st0" d="M666.3 415l199.3-8 1.4 167.3 289.3 6"/></svg>
         </div>
       </div>
 
@@ -192,7 +193,7 @@
       <section id="about" class="about section">
         <div class="container">
           <header class="section-header">
-            <h2 class="section-title">About <span class="text-primary">go.arch</span></h2>
+            <h2 class="section-title">About <span class="text-primary">Jaiva Builders</span></h2>
             <strong class="fade-title-left">About</strong>
           </header>
           <div class="section-content">
@@ -380,7 +381,7 @@
 
       <!-- Clients  -->
 
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <header class="section-header">
             <h2 class="section-title">Our <span class="text-primary">clients</span></h2>
@@ -424,7 +425,7 @@
             <a href="#" class="btn btn-shadow-2">Work together <i class="icon-next"></i></a>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Contacts -->
 
@@ -440,7 +441,7 @@
                 +7 (212) 654-33-35<br>
                 +7 (212) 287-85-22<br>
                 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="630a0d050c23040c0211000b4d000c0e">[email&#160;protected]</a><br>
-                USA, New York, 57 Quigley Bridge
+                Thrissur, Kerala
               </div>
               <div class="col-base  col-md-8">
                 <form class="js-ajax-form">
@@ -488,16 +489,16 @@
           <div class="row-base row">
             <div class="col-base text-left-md col-md-4">
               <a href="#" class="brand">
-                go<span class="text-primary">.</span>arch
+                Jaiva Builders
               </a>
             </div>
-            <div class="text-center-md col-base col-md-4">
+            <!-- <div class="text-center-md col-base col-md-4">
               <a href="https://themeforest.net/user/murren20" class="author-link">
                 by Murren20
               </a>
-            </div>
+            </div> -->
             <div class="text-right-md col-base col-md-4">
-              © go.arch 2016. All Rights Reserved.
+              © Jaiva Builders 2019. All Rights Reserved.
             </div>
           </div>
         </div>
@@ -536,6 +537,9 @@
 <!-- SLIDER REVOLUTION -->
 <script src="js/rev-slider/jquery.themepunch.tools.min.js"></script>
 <script src="js/rev-slider/jquery.themepunch.revolution.min.js"></script>
+
+<!-- FLICKITY -->
+<script src="js/flickity.pkgd.min.js"></script>
 
 <!-- SLIDER REVOLUTION 5.0 EXTENSIONS   -->
 <script src="js/rev-slider/revolution.extension.actions.min.js"></script>

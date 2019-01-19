@@ -19,7 +19,8 @@ body {
     font-size: 1em;
     line-height: 1.65;
     color: rgba(255, 255, 255, .5);
-    background-color: #272727
+    background-color: #272727;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -520,6 +521,11 @@ label.error {
     max-width: 100%;
     }
 
+.nav-collapsed-logo {
+    max-width: 24px;
+    margin-right: 6px;
+    }
+
 .brand:hover,
 .brand:focus {
     color: #fff;
@@ -971,49 +977,63 @@ label.error {
 }
 
 .main-intro-slider {
-    display: flex;
+    /* display: flex; */
     height: 100%;
+    width: 100%;
 	
-	background-image: 
+	/* background-image: 
 		linear-gradient(
 			135deg,
 			rgb(44, 42, 48),
 			rgb(56, 42, 42)
+			); */
+	background-image: 
+		linear-gradient(
+			135deg,
+			rgb(54, 53, 58),
+			rgb(31, 26, 26)
 			);
     }
 
 .main-intro-slider_item {
-    max-width: 65%;
-    margin: auto;
-    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+/* https://codepen.io/eikeco/pen/MwGRKr */
+    left: 0 !important;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
     }
 
-.main-intro-slider_item img {
-    max-width: 80%;
-    position: absolute;
-    right: 0; left: 0;
-    bottom: -115px;
-    margin: auto;
-    z-index: 2;
+.main-intro-slider_item.is-selected {
+    opacity: 1;
+    z-index: 0
+    }
+
+.main-intro-slider_item.is-selected image {
     opacity: 0;
     animation: 2s appear 1.5s forwards;
     }
 
 @keyframes appear {
-  to {
-    opacity: 1;
-  }
-}
+    to {
+        opacity: 1;
+        }
+    }
 
 .main-intro-slider_item svg {
-    position: relative;
+    max-width: 65%;
+    bottom: 0; right: 0;
+    position: absolute;
     z-index: 1;
     }
 
-.main-intro-slider_item path {
+.main-intro-slider_item.is-selected path {
     stroke-dasharray: 3000;
     stroke-dashoffset: 3000; 
-    animation: dash 3s ease-in forwards;
+    animation: 
+        dash 3s ease-in forwards,
+        .5s disappear 2s forwards;
     }
 
 @keyframes dash {
@@ -1021,6 +1041,12 @@ label.error {
     stroke-dashoffset: 0;
   }
 }
+
+@keyframes disappear {
+    to {
+        opacity: 0;
+        }
+    }
 
 .rev_slider {
     color: #fff;
@@ -1041,7 +1067,6 @@ label.error {
 .arrow-right {
     position: absolute;
     z-index: 4;
-    bottom: 4vh;
     cursor: pointer;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -2133,14 +2158,14 @@ img.mfp-img {
         font-size: 85%
     }
     .arrow-left {
-        top: 43.5vmin;
+        top: 40.5vmin;
         bottom: auto
     }
     .arrow-right {
         left: 28vmin;
         right: auto;
         margin-left: 5em;
-        top: 43.5vmin;
+        top: 40.5vmin;
         bottom: auto
     }
     .entry {
